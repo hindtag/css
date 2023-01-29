@@ -59,18 +59,17 @@
 
 
 
-
-## Tools:
-
 ## Resources:
     Readables/guide
         https://developer.mozilla.org/en-US/docs/Web/CSS
+    Color palette
+        https://coolors.co/
     CSS file validator
         w3c.ord/css-validator
     A visual way to understand CSS specificity
         https://specificity.keegan.st/
 
 
-Continue on ""
-
+Continue on "51:00"
+https://www.youtube.com/watch?v=OXGznpKZ_sA
 
