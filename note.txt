@@ -1,0 +1,15 @@
+HTML is the foundation and structure.
+CSS is the paint and the decorations for the appearances
+
+3 different ways to apply CSS into our document
+    External
+    Internal
+    Inline 
+
+
+Tools:
+
+
+Resources:
+
+Continue on ""
