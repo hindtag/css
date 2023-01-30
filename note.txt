@@ -36,6 +36,9 @@
             -> Do not repeat yourself (DRY)
 
 
+    Colors = Just use the hex # fer easy UI gradients
+
+    Units and sizes = 
 
 
 
