@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;;
+}
+
+ol {
+    /* list-style-type: lower-alpha; */
+    list-style-type: lower-alpha;
+    padding: 0;
+}
+
+ul {
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: #00f;
+    line-height: 1.6;
+    /* list-style-image: url('../img/checkmark.png'); */
+    /* list-style: square url('../img/checkmark.png') inside; */
+}
+
+ul li:nth-child(2) { /* change the second list item */
+    color: red;
+}
+
+ul ::marker {
+    color: red;
+    font-family: fantasy;
+    font-size: 1em;
+    content: "Only $ >> "; /* This is the part that you can add svg or font awesome */
+
+}

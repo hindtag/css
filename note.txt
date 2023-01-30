@@ -115,6 +115,22 @@
 
 ## CSS Anatomy/Order of things
 
+    Always starts at the Top.
+        *{}
+            body{}
+                header{}
+                    nav{}
+                        h2{}
+                            ul{}
+                                li{}
+
+                main{}
+                    article{}
+                footer{}
+
+
+
+        //* new line *//
         p {
             color: red
         }
