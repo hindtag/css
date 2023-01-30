@@ -46,11 +46,28 @@
                     <header> with width 50%
                         <h1> with 50% -> this will only 25% of the screen.
                 
-    CSS Box Model =
+    CSS Box Model = to manipulate the layout of each of the content.
                 margin
                     border
                         padding
                             content         
+
+    Typography = This is the font manipulation.
+               = This is the way that the text is arranged and presented.
+
+            -> text-align: (left/right/center/justify) = positioning
+            -> text-decorations: (line-through/underline/overline/none) = with line
+            -> text-transform: (capitalize/lowercase/uppercase) - letter manipulation
+            -> text-indent: (2em) = indention of the first line.
+            -> line-height: (1.5) = line space
+            -> letter-spacing: () = letter space
+            -> word-spacing: () = word space
+            -> font-size: () = size of font
+            -> font-weight: (bold?) = bold setting
+            ->font-style: (italic/oblique) = italic settings
+            -> font-family: () = 
+
+
 
 
 
@@ -70,6 +87,9 @@
             - use em on margin and padding.
             - You shouldnt set a font size on the root element.
             - When on dev tools, if you hover, the orange is the margin and the green is the padding.
+            - for font family - it is common to use roboto or sans serif, monospace and fantasy
+            - when using font, it is better not to use external link such as google font for it takes more to load.
+
 
 ## CSS Anatomy/Order of things
 
@@ -93,8 +113,10 @@
         w3c.ord/css-validator
     A visual way to understand CSS specificity
         https://specificity.keegan.st/
+    External font
 
 
-Continue on "51:00"
+
+Continue on "1:37:00"
 https://www.youtube.com/watch?v=OXGznpKZ_sA
 
