@@ -74,9 +74,13 @@
             -> a:active {}
 
     Ordered lists = 
+            -> list-style-type: (lower-alpha/decimal/upper-roman) = setting the list appearances.
+            -> list-style: square url('../img/checkmark.png') inside; = adding custom png
+                ul li:nth-child(odd/2/even) { /* change the second list item */
+                    color: red;
+                }
 
-
-
+    
 ## Note -
             - Starts with css reset.
                 * {
@@ -101,6 +105,13 @@
                         a:hover, a:focus {}
                             a:active {}
                 -:> text opacity is the common application of sudo class           
+
+           - using sudo with : and ::
+                example: 
+                        ul li:nith-child() {} = 
+                        ::marker = This is the part that you can add svg and font awesome for markers.     
+
+
 
 ## CSS Anatomy/Order of things
 
