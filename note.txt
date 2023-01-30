@@ -67,7 +67,13 @@
             ->font-style: (italic/oblique) = italic settings
             -> font-family: () = 
 
+    CSS links = basically you need to just set the following:
+            -> text decorations, default color and pointer
+            -> a:visited {}
+            -> a:hover, a:focus {}
+            -> a:active {}
 
+    Ordered lists = 
 
 
 
@@ -88,8 +94,13 @@
             - You shouldnt set a font size on the root element.
             - When on dev tools, if you hover, the orange is the margin and the green is the padding.
             - for font family - it is common to use roboto or sans serif, monospace and fantasy
-            - when using font, it is better not to use external link such as google font for it takes more to load.
-
+            - when using font, it is better not to use external link such as google font for it takes more to load, if you need to use google font better use import inside the css.
+            - the order of hyperlink settings
+                a {}
+                    a:visited {}
+                        a:hover, a:focus {}
+                            a:active {}
+                -:> text opacity is the common application of sudo class           
 
 ## CSS Anatomy/Order of things
 
@@ -117,6 +128,6 @@
 
 
 
-Continue on "1:37:00"
+Continue on "2:00:00"
 https://www.youtube.com/watch?v=OXGznpKZ_sA
 
