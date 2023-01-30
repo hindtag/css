@@ -38,16 +38,38 @@
 
     Colors = Just use the hex # fer easy UI gradients
 
-    Units and sizes = 
+    Units and sizes = Pixel "px" was the commonly used.
+            -> 16px was the default text of browser.
+            -> rem was the typical unit used for font size.
+            -> When using %, you need to remember that it is relative to the parent.
+                Example: 
+                    <header> with width 50%
+                        <h1> with 50% -> this will only 25% of the screen.
+                
+    CSS Box Model =
+                margin
+                    border
+                        padding
+                            content         
 
 
 
-## Note - Starts with css reset.
+## Note -
+            - Starts with css reset.
+                * {
+                margin 0;
+                padding 0;
+                box-sizing: border-box;
+                }
             - Order of external, internal and inline CSS
             - Avoid inline CSS, better use external CSS.
             - You can group selectors example h1, h2, h3 {color: blue;}
             - You can verify/check css element on chrome dev tools. chrome > rightclick > inspect > styles > elements
             - Better to use html {} for setting the parent element instead of body {}
+            - Only px and rem for the unit size. rem for font size.
+            - use em on margin and padding.
+            - You shouldnt set a font size on the root element.
+            - When on dev tools, if you hover, the orange is the margin and the green is the padding.
 
 ## CSS Anatomy/Order of things
 
