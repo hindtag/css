@@ -80,7 +80,18 @@
                     color: red;
                 }
 
-    
+    Display =
+            -> Block level = stacks of boxes with 100percent width and it stacks on top of each other
+                Example:
+                    <h1>, <p>
+            -> Inline level = only occupies thatwhat their content needs
+                Example:
+                    <a>
+
+
+
+
+
 ## Note -
             - Starts with css reset.
                 * {
@@ -111,9 +122,11 @@
                         ul li:nith-child() {} = 
                         ::marker = This is the part that you can add svg and font awesome for markers.
 
+
+
 ## CSS Anatomy/Order of things
 
-    Always starts at the Top.
+    >> Always starts at the Top.
         *{}
             body{}
                 header{}
@@ -128,7 +141,7 @@
 
 
 
-        //* new line *//
+    >>  This is how the css syntax.
         p {
             color: red
         }
@@ -137,7 +150,6 @@
         color is the property
         red is the property value
         color: red; is the declaration.
-
 
 
 ## Resources:
