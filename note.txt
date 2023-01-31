@@ -109,9 +109,7 @@
            - using sudo with : and ::
                 example: 
                         ul li:nith-child() {} = 
-                        ::marker = This is the part that you can add svg and font awesome for markers.     
-
-
+                        ::marker = This is the part that you can add svg and font awesome for markers.
 
 ## CSS Anatomy/Order of things
 
@@ -155,6 +153,6 @@
 
 
 
-Continue on "2:00:00"
+Continue on "2:45:00"
 https://www.youtube.com/watch?v=OXGznpKZ_sA
 
