@@ -1,48 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&&family=Lobster&display=swap');
 
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 body {
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
+    min-height: 200vh;
 }
 
-.columns {
-    /* column-count: 4;
-    column-width: 250px; */
-    columns: 4 250px;
-    column-rule: 3px solid #333;
-    column-gap: 3rem;
+.outer-container {
+    border: 3px dashed #000;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
 }
 
-.columns p{ /* just the paraghraphs that are inside the columns container */
-    margin-top: 0;
+.inner-container {
+    border: 2px solid #00f;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
 }
 
-.columns h2{
-    margin-top: 0;
-    background-color: #333;
+.box {
+    width: 150px;
+    height: 150px;
     color: #fff;
     padding: 1rem;
-    break-inside: avoid;
 }
 
-.qoute {
-
-}
-
-.columns .qoute {
-    margin-top: 2rem;
-    font-size: 3rem;
-    text-align: center;
-    color: #333;
-    column-span: all;
-}
-
-.nowrap {
-    white-space: nowrap;
+.absolute {
+    background-color: #00f;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
