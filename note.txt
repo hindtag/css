@@ -81,10 +81,14 @@
                 }
 
     Display =
-            -> Block level = stacks of boxes with 100percent width and it stacks on top of each other
+            -> Block level = stacks of boxes with 100percent width of their given containers.
+                           = it stacks on top of each other.
+                           = create a new line elements.
                 Example:
-                    <h1>, <p>
-            -> Inline level = only occupies thatwhat their content needs
+                    <h1>, <p>, <li>
+            -> Inline level = only occupies what their content needs
+                            = do not stack on top of each other and does not create a new line. 
+                            = Useful on links and buttons
                 Example:
                     <a>
 
@@ -99,6 +103,7 @@
                 padding 0;
                 box-sizing: border-box;
                 }
+
             - Order of external, internal and inline CSS
             - Avoid inline CSS, better use external CSS.
             - You can group selectors example h1, h2, h3 {color: blue;}
@@ -121,6 +126,38 @@
                 example: 
                         ul li:nith-child() {} = 
                         ::marker = This is the part that you can add svg and font awesome for markers.
+
+            - This is for basic navigation:
+                    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+                    *{
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                    body {
+                        font-size: 2rem;
+                        font-family: "Roboto", sans-serif;
+                    }
+                    ul {
+                        list-style-type: none;
+                        padding: 0.5rem;
+                        text-align: right;
+                        background-color: black;
+                        margin: 0;
+                    }
+                    li {
+                        display: inline-block;
+                        margin-inline: 0.5rem;
+                    }
+                    li a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                    li a:hover,
+                    li a:focus {
+                        text-decoration: underline;
+                    }
 
 
 
@@ -165,6 +202,6 @@
 
 
 
-Continue on "2:45:00"
+Continue on "3:00:00"
 https://www.youtube.com/watch?v=OXGznpKZ_sA
 
