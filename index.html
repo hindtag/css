@@ -6,19 +6,25 @@
     <meta name="description" content="This is my second portfolio using CSS">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Column</title>
+    <title>CSS Position</title>
     <link rel="icon" href="/img/favicon.ico" type="image/s-icon">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <section class="columns">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea at modi explicabo veniam nobis adipisci illo fugiat quisquam reiciendis facilis!</p>
-        <p>Cumque doloribus alias error, ad nobis sint quam, tempora voluptate magnam saepe itaque! Quas, commodi rem voluptates odio corporis consectetur!</p>
-        <!-- <h2>Next Topic</h2> -->
-        <p class="qoute">&#8220;Where's my rug, man?&#8221; <span class="nowrap">&#8212; The dude</span></p>
-        <p>Corporis enim soluta accusantium nulla magni. In aut fuga facilis eius, consequuntur veritatis enim nostrum! Molestiae possimus consequuntur praesentium ipsum.</p>
-        <p>Ipsum illum et vitae. Quos libero repudiandae numquam voluptatum natus aut dicta ducimus ullam fuga aliquid necessitatibus, ipsa debitis tenetur.</p>
-    </section>
-    <p>Architecto obcaecati quisquam quidem iure quibusdam, minima nulla perferendis facere repellat ipsum dicta possimus doloremque sint saepe id numquam ut!</p>
+    <div class="outer-container">
+        <div class="inner-container"></div>
+            <div class="box absolute">
+                <p>Absolute</p>
+            </div>
+            <div class="box relative">
+                <p>Relative</p>
+            </div>
+            <div class="box fixed">
+                <p>Fixed</p>
+            </div>
+            <div class="box sticky">
+                <p>Sticky</p>
+            </div>
+    </div>
 </body>
 </html>
