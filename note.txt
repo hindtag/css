@@ -80,7 +80,8 @@
                     color: red;
                 }
 
-    Display =
+    Display = How display was rendered using block and inline elements.
+            
             -> Block level = stacks of boxes with 100percent width of their given containers.
                            = it stacks on top of each other.
                            = create a new line elements.
@@ -92,8 +93,10 @@
                 Example:
                     <a>
 
-
-
+    Floats = 
+            -> to fix the overlapping of the section
+                blockElementName {
+                    display: flow-root;
 
 
 ## Note -
