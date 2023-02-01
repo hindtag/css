@@ -102,7 +102,10 @@
                         clear:both;
                         float:left;
                     }
-
+    Column = 
+            -> Always use class (.) to manipulate the css.
+            -> Always set desired width.
+            -> Use break-inside: avoid; for properties with background colors
 
 ## Note -
             - Starts with css reset.
@@ -130,7 +133,7 @@
                             a:active {}
                 -:> text opacity is the common application of sudo class           
 
-           - using sudo with : and ::
+            - using sudo with : and ::
                 example: 
                         ul li:nith-child() {} = 
                         ::marker = This is the part that you can add svg and font awesome for markers.
@@ -167,7 +170,9 @@
                         text-decoration: underline;
                     }
 
-
+            Color each element
+            Use semantics in creating a page layout/column instead of div.
+                Use overflow for center column to resolve the height required issue
 
 ## CSS Anatomy/Order of things
 
@@ -197,6 +202,19 @@
         color: red; is the declaration.
 
 
+# Steps in CSS
+    Preparing the column
+        1. Color each element.
+        2. Determine the overall width of the layout.
+        3. Adjust the width of the page-wide elements.
+        4. Float the column.
+        5. Set the column widths.
+        6. Clear the column width.
+        7. Adjust borders and padding.
+        8. Adjust widths again.
+        9. Check the column documentation.
+
+
 ## Resources:
     Readables/guide
         https://developer.mozilla.org/en-US/docs/Web/CSS
@@ -207,6 +225,9 @@
     A visual way to understand CSS specificity
         https://specificity.keegan.st/
     External font
+        https://fonts.google.com/
+    Unicode character
+        https://unicode-table.com/en/
 
 
 
