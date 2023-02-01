@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#head {
+    border-bottom: 3px double black;
+}
+
+#left {
+    float: left;
+    width: 20%;
+}
+
+#right {
+    float: left;
+    width: 75%;
+    border-left: 3px double gray;
+}
+
+#footer {
+    clear: both;
+    text-align: center;
+    border-top: 3px double gray;
+}

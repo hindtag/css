@@ -97,6 +97,11 @@
             -> to fix the overlapping of the section
                 blockElementName {
                     display: flow-root;
+            -> If you want an element to start a new line use the float and clear.
+                    elementName {
+                        clear:both;
+                        float:left;
+                    }
 
 
 ## Note -
