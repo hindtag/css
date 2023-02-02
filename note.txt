@@ -107,6 +107,12 @@
             -> Always set desired width.
             -> Use break-inside: avoid; for properties with background colors
 
+
+    Position = Alignment of elements using .className{position: ;}.
+            -> Absolute needs relative parent.
+            -> 
+
+
 ## Note -
             - Starts with css reset.
                 * {
@@ -174,6 +180,9 @@
             Use semantics in creating a page layout/column instead of div.
                 Use overflow for center column to resolve the height required issue
 
+
+            z-index is used for reordering structured position.
+
 ## CSS Anatomy/Order of things
 
     >> Always starts at the Top.
@@ -228,6 +237,8 @@
         https://fonts.google.com/
     Unicode character
         https://unicode-table.com/en/
+    Emoji 
+        https://emojipedia.org/rocket/
 
 
 
