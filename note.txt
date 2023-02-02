@@ -110,7 +110,13 @@
 
     Position = Alignment of elements using .className{position: ;}.
             -> Absolute needs relative parent.
-            -> 
+
+    Flexbox = 
+            -> This is the basic code to center a div (container)    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
 
 
 ## Note -
@@ -180,7 +186,6 @@
             Use semantics in creating a page layout/column instead of div.
                 Use overflow for center column to resolve the height required issue
 
-
             z-index is used for reordering structured position.
 
 ## CSS Anatomy/Order of things
@@ -239,9 +244,12 @@
         https://unicode-table.com/en/
     Emoji 
         https://emojipedia.org/rocket/
+    Flexbox games
+        https://flexboxfroggy.com
+    
 
 
 
-Continue on "3:38:00"
+Continue on "4:21:00"
 https://www.youtube.com/watch?v=OXGznpKZ_sA
 

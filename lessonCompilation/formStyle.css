@@ -6,8 +6,16 @@
     box-sizing: border-box;
 } */
 
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 form {
-    display: flow-root;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 fieldset {
