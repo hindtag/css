@@ -111,13 +111,33 @@
     Position = Alignment of elements using .className{position: ;}.
             -> Absolute needs relative parent.
 
-    Flexbox = 
+    Flexbox = CSS Flexbox is a layout model in CSS that provides a simple way to align and distribute space among elements within a container, even when their size is unknown or dynamic. It offers more control over the layout of elements than the traditional block and inline layout models, making it easier to create complex, responsive designs.
+            = CSS Flexbox is best suited for one-dimensional layouts, where elements are arranged either in a row (horizontally) or a column (vertically), and can be stretched to fill the available space. It is ideal for aligning items along one axis and distributing remaining space.
+            = Flexbox consists of flex containers and flex items, with properties such as justify-content, align-items, and flex-direction to control the flow and alignment of elements within the container.
             -> This is the basic code to center a div (container)    
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
+    Grid layout = With CSS Grid, you can define the size and position of grid items, control the spacing between rows and columns, and create complex, responsive designs that can adapt to different screen sizes.
+            Example:
+                display: grid;
+                grid-template-columns: repeat(2, 1fr 2fr);
 
+                or 
+                grid-column-start: = specifies a grid item's start position within the grid columns
+                grid-column-end: = specifies a grid item's end position within the grid columns
+                grid-column: = shorthand for start and end of column. example grid-column: 4/6
+                grid-row-start: = specifies a grid item's start position within the grid rows
+                grid-row-end: = specifies a grid item's end position within the grid rows
+                grid-row: = shorthand for start and end of row example. grid-row: 4/6
+                grid-area: = specifies a grid item's position and size within the grid. (combination of grid column + grid row) format is grid-row-start, grid-column-start, grid-row-end, followed by grid-column-end. Example: grid-area: 1 / 4 / 6 / 5
+                order: = Like a z-index to overwrite the order
+                grid-template-columns: Specifies the sizing and names of the grids columns with property of <length> <percentage> <flex> max-content min-content and minmax
+                grid-template-columns: 100px 3em 40%;
+                grid-template: = Specifies the sizing and names of the grid's rows and columns
+                    Example
+                        grid-template: 1fr 50px / 1fr 4fr;
 
 ## Note -
             - Starts with css reset.
@@ -188,6 +208,9 @@
 
             z-index is used for reordering structured position.
 
+            to check the grid in dev tools:
+                    f12 > elements > layout > scroll down to grid overlays > main.containers.
+
 ## CSS Anatomy/Order of things
 
     >> Always starts at the Top.
@@ -246,10 +269,14 @@
         https://emojipedia.org/rocket/
     Flexbox games
         https://flexboxfroggy.com
+    Grid layout games
+        https://codepip.com/games/grid-garden/
+        hindtag
+        Cssjourney
     
 
 
 
-Continue on "4:21:00"
+Continue on "4:46:00"
 https://www.youtube.com/watch?v=OXGznpKZ_sA
 

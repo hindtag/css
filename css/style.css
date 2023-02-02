@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-* { /* This is a CSS reset */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,40 +9,65 @@
 body {
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
-  padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: 50px auto 50px;
+  grid-template-areas: "hd hd hd hd hd hd hd hd hd" "mn mn mn mn mn mn mn sb sb" "ft ft ft ft ft ft ft ft ft";
+  column-gap: 0.5rem;
+}
+
+.el {
+  background-color: rebeccapurple;
+  color: #fff;
+  display: grid;
+  place-content: center;
+}
+
+.header {
+  grid-area: hd;
+}
+
+.sidebar {
+  grid-area: sb;
+  background-color: blue;
+}
+
+.footer {
+  grid-area: ft;
 }
 
 .container {
-  max-width: 800px;
+  grid-area: mn;
   min-height: 400px;
-  margin-inline: auto;
-  border: 1px solid #000;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 2fr);
+  grid-auto-rows: minmax(150px, auto);
   gap: 1rem;
-  align-items: center;
-  flex-flow: row wrap;
-  align-content: space-evenly;
-} 
+}
 
 .box {
-  /* min-width: 100px; */
-  height: 100px;
   background-color: #000;
   color: #fff;
   font-size: 2rem;
   padding: 0.5rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  flex: 1 1 250px;
 }
 
-.box:nth-child(2) {
-  flex: 2 2 250px;
-  order: 1;
-  
+.box:first-child {
+  background-color: blue;
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+
+  display: grid;
+  place-content: center;
 }
+
+
+.box:nth-child(2){
+  background-color: purple;
+  grid-column: 1 / 5;
+  grid-row: 3/4;
+}
+
+
 
