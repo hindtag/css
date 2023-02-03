@@ -196,6 +196,18 @@
                     -webkit-background-clip: text;
                     background-clip: text;
 
+    Media Queries Syntax = Smallest screen first/mobile first design
+        Syntax @media media type and (condition: breakpoint) {
+            // CSS rules
+        }
+
+        min-width = width starting from 
+        max-width = up to the width of
+        orientation - "landscape"
+        min-aspect-ratio: 
+
+        You can check the display on dev tools using layout and dimension response (in the left display)
+
 
 ## Note -
             - Starts with css reset.
@@ -338,6 +350,6 @@
 
 
 
-Continue on "4:51:00"
+Continue on "5:38:00"
 https://www.youtube.com/watch?v=OXGznpKZ_sA
 
