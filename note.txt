@@ -230,7 +230,7 @@
 
     >>  This is how the css syntax.
         p {
-            color: red
+            color: red;
         }
 
         Where p is the selector
