@@ -91,7 +91,7 @@
                             = do not stack on top of each other and does not create a new line. 
                             = Useful on links and buttons
                 Example:
-                    <a>
+                    <a> <img>
 
     Floats = 
             -> to fix the overlapping of the section
@@ -186,6 +186,16 @@
                 grid-template: = Specifies the sizing and names of the grid's rows and columns
                     Example
                         grid-template: 1fr 50px / 1fr 4fr;
+
+
+    Images: = 
+        Reset -:> img {display: block;} // to remove the white space below.
+        Round images -:> border-radius: 50%; // making it round.
+        Adding images -:> background-image: url(../img/);
+        Clip compatibility for browser -:>
+                    -webkit-background-clip: text;
+                    background-clip: text;
+
 
 ## Note -
             - Starts with css reset.
