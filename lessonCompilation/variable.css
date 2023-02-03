@@ -31,7 +31,7 @@
   --BORDERS: 2px solid var(--DARK-COLOR);
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
     --BGCOLOR: #000;
     --ALT-BGCOLOR: #333;

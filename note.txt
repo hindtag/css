@@ -213,6 +213,10 @@
         Pseudo class -> using single :
         Pseudo element -> using double ::
 
+    Variable = 
+    :PseudoPropertyName {
+        --VARIABLE NAME: value;
+    }
 ## Note -
             - Starts with css reset.
                 * {
@@ -354,6 +358,6 @@
 
 
 
-Continue on "6:39:00"
+Continue on "7:20:00"
 https://www.youtube.com/watch?v=OXGznpKZ_sA
 
