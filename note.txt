@@ -209,6 +209,10 @@
         You can check the display on dev tools using layout and dimension response (in the left display)
 
 
+    Pseudo = 
+        Pseudo class -> using single :
+        Pseudo element -> using double ::
+
 ## Note -
             - Starts with css reset.
                 * {
@@ -350,6 +354,6 @@
 
 
 
-Continue on "5:38:00"
+Continue on "6:39:00"
 https://www.youtube.com/watch?v=OXGznpKZ_sA
 
