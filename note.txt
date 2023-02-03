@@ -213,6 +213,10 @@
         Pseudo class -> using single :
         Pseudo element -> using double ::
 
+    Variable = 
+    :PseudoPropertyName {
+        --VARIABLE NAME: value;
+    }
 ## Note -
             - Starts with css reset.
                 * {
