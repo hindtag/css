@@ -29,3 +29,20 @@
 | >=1024px | large |
 | >=1280px | xl |
 | >=1536px | 2xl |
+
+
+### Organizing your CSS
+
+-- Follow your team
+
+-- Use comments to create labels, headers and dividers
+| /* || RESET */ |
+| /* || UTILITY CLASSES */ |
+| /* || VARIABLES */ |
+| /* || GENERAL STYLES */ |
+| /* || BLOCKS */ |
+| /* aka components */ |
+
+-- Sort properties alphabetically ABCSS
+
+-- Larger projects follow a naming convention methodology. BEM - Block, Element, Modifier

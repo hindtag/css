@@ -1,13 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
+/* || RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+button {
+  font: inherit;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* COLORS */
+  --BGCOLOR: whitesmoke;
+  --COLOR: #000;
+  --HEADER-BGCOLOR: #333;
+  --HEADER-COLOR: whitesmoke;
+}
+
+/* || UTILITY CLASSES */
+
+.underline {
+  text-decoration: underline;
+}
+
+/* || GENERAL STYLES */
+
 html {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -15,88 +39,45 @@ body {
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
-}
-
-main {
-  flex-grow: 1;
-  display: flex;
-  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1em;
 }
 
-div {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #000;
-  display: grid;
-  place-content: center;
+/* || BLOCKS */
+/* aka components */
+
+.btn {
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 15px;
 }
 
-div:first-child {
-  background-color: dodgerblue;
-  /* transform: translateX(-50%); */
-  /* transform: rotateX(180deg); */
-  /* transform: scaleX(120%); */
-  /* transform: skewX(-10deg); */
-}
+/* || MODIFIERS */
+/* incremental style changes */
 
-div:nth-child(2) {
+/* Blocks with modifiers */
+.btn--secondary {
   background-color: yellow;
-  /* transform: translateY(-2rem); */
-  /* transform: rotateY(180deg); */
-  /* transform: scaleY(120%); */
-  /* transform: skewY(10deg); */
 }
 
-div:last-child {
-  background-color: limegreen;
-  /* transform: translate(100%, -5rem); */
-  /* transform: rotate(78deg); */
-  /* transform: scale(50%, 50%); */
-  /* transform: skew(-10deg, -10deg); */
+.btn--lean {
+  transform: skewX(-10deg);
 }
 
-div:hover {
-  background-color: midnightblue;
-  /* transition-property: background-color, transform;
-  transition-duration: 2s, 3s;
-  transition-delay: 0.5s; 
-  transition-timing-function: linear;*/
-  transition: all 2s 0.5s;
+.btn--border-lg {
+  border: 5px solid whitesmoke;
 }
 
-div:last-child:hover {
-  transform: rotate(180deg);
+/* Elements with modifiers */
+.header__btn--secondary {
+  background-color: yellow;
 }
 
-.animate {
-  /* animation-name: slide;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 1s;
-  animation-iteration-count: 2;
-  animation-direction: normal;
-  animation-fill-mode: forwards; */
-  animation: 5s ease-in-out 1s 2 normal forwards slide;
+.header__btn--lean {
+  transform: skewX(-10deg);
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-
-  33% {
-    transform: translateX(300px) rotate(180deg);
-  }
-
-  66% {
-    transform: translateX(-300px) rotate(-180deg);
-  }
-
-  100% {
-    transform: translateX(0);
-    background-color: rebeccapurple;
-  }
+.header__btn--border-lg {
+  border: 5px solid whitesmoke;
 }
