@@ -217,6 +217,16 @@
     :PseudoPropertyName {
         --VARIABLE NAME: value;
     }
+
+    Functions = functionName()
+        min(2.25rem, 3vh) -> this will always going to select the smallest of two available.
+            3vh is height reference
+
+        min(absolute value, relative value)
+
+        max actually provides a minimum absolute value
+        min actually provides a maximum absolute value
+
 ## Note -
             - Starts with css reset.
                 * {
@@ -358,6 +368,6 @@
 
 
 
-Continue on "7:20:00"
+Continue on "7:30:00"
 https://www.youtube.com/watch?v=OXGznpKZ_sA
 
