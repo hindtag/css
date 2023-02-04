@@ -39,15 +39,24 @@ body {
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
 }
 
 /* || BLOCKS */
 /* aka components */
 
-.btn {
+.header {
+  background-color: var(--HEADER-BGCOLOR);
+  color: var(--HEADER-COLOR);
+  padding: 1rem 1rem 0.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+/* || ELEMENTS */
+/* No standalone meaning -semantically tied to the block */
+/* Does not represent structure, not header__nav__btn */
+.header__btn {
   min-width: 100px;
   min-height: 100px;
   border-radius: 15px;
@@ -57,15 +66,15 @@ body {
 /* incremental style changes */
 
 /* Blocks with modifiers */
-.btn--secondary {
+.header__btn--secondary {
   background-color: yellow;
 }
 
-.btn--lean {
+.header__btn--lean {
   transform: skewX(-10deg);
 }
 
-.btn--border-lg {
+.header__btn--border-lg {
   border: 5px solid whitesmoke;
 }
 
