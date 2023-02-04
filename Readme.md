@@ -116,3 +116,6 @@
 -- Sort properties alphabetically ABCSS
 
 -- Larger projects follow a naming convention methodology. For example: BEM - Block, Element, Modifier
+    .header {...} /* Block */
+    .header__title {...} /* Element */
+    .header--highlighted {...} /* Modifier */
