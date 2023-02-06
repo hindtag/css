@@ -327,8 +327,7 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing
         color: red; is the declaration.
 
 
-# Steps in CSS
-    Preparing the column
+    Preparing the column (refactor)
         1. Color each element.
         2. Determine the overall width of the layout.
         3. Adjust the width of the page-wide elements.
@@ -344,8 +343,9 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing
         Cross axis runs vertically in a column, from top to bottom.
 
 ## Resources:
-    Readables/guide
-        https://developer.mozilla.org/en-US/docs/Web/CSS
+    CSS how to guide
+        https://css-tricks.com/
+        https://developer.mozilla.org/en-US/docs/Learn
     Color palette
         https://coolors.co/
     CSS file validator
@@ -366,6 +366,8 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing
         Cssjourney
 
 
-Continue on "9:15:00"
+
+Continue on "9:30:00"
 https://www.youtube.com/watch?v=OXGznpKZ_sA
+
 

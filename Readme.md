@@ -119,3 +119,32 @@
     .header {...} /* Block */
     .header__title {...} /* Element */
     .header--highlighted {...} /* Modifier */
+
+## CSS semantics/order from the scratch
+
+|| RESET
+*
+img
+input, button, textarea
+
+|| VARIABLE
+:root
+	FONTS
+		font family
+		font heading
+		font style
+	COLORS
+		background color
+		background color fade
+		background image
+		body background color
+		font color
+
+|| Utility
+.offscreen
+.nowrap
+.center
+
+|| Gen style
+html
+body
