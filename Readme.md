@@ -121,6 +121,16 @@
     .header--highlighted {...} /* Modifier */
 
 ## CSS semantics/order from the scratch
+1. Pre CSS
+    prepare the html
+        image
+        classes and elements
+
+2. Building the css default
+3. Building the mobile first
+4. Building for the large display
+
+Please undo this with complete
 
 || RESET
 *
@@ -139,12 +149,104 @@ input, button, textarea
 		background image
 		body background color
 		font color
+        border color
+        highlight color
+        link color
+        link hover
+        link active
+        header background color
+        header color
+        nav background color
+        hero background color
+        hero color
+    BORDERS
+        borders
 
-|| Utility
+    STANDARD PADDING
+        padding
+        padding side
+
+    STANDARD MARGIN
+        margin
+
+|| UTILITY
 .offscreen
-.nowrap
-.center
+    position
+    alignment
+.nowrap {}
+.center {}
 
-|| Gen style
-html
+|| GEN STYLE
+html 
+    scroll-behavior
+    font-size
+    font-family
+    background-color
+    background-image
+
 body
+    background-color
+    color
+    min-height
+    max-width
+    margin
+    border-left
+    border-right
+    box-shadow
+
+h1, h2, h3
+    font-family
+    letter-spacing
+
+h2, h3
+    margin-bottom
+    color
+p
+    line-height
+a:any-link
+    color
+a:hover, a:focus-visible
+    color
+a:active
+    color
+
+|| HEADER
+
+.header
+    position
+    top
+    z-index
+
+.header__h1
+    text-align
+    background-color
+    color
+    padding
+
+.header__nav.
+    background-color
+    border-bottom
+    font-weight
+    box-shadow
+
+.header__ul
+    padding
+    list-style-type
+    display
+    justify-content
+    gap
+
+|| HERO
+
+.hero
+    position
+
+.hero__h2
+    background-color
+    color
+    padding
+    text-shadow
+    position
+    top
+    left
+    animation

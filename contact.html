@@ -34,38 +34,13 @@
         <figure>
             <img src="img/tacos_close_up_1000x649.png" alt="Little Taco Shop Tacos" title="Tacos ready to eat!"
                 width="1000" height="649">
-            <figcaption>
+            <!-- <figcaption>
                 Tapsi Na Bradd Tacos
-            </figcaption>
+            </figcaption> -->
         </figure>
     </section>
-    <main>
-        <section>
-            <h2>Our Contact Form</h2>
-
-            <form action="https://httpbin.org/get" method="get">
-                <fieldset>
-                    <legend>Send Us A Message</legend>
-                    <p>
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" placeholder="your name" required>
-                    </p>
-                    <p>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="your email" required>
-                    </p>
-                    <p>
-                        <label for="message">Your Message:</label>
-                        <br>
-                        <textarea name="message" id="message" cols="30" rows="10"
-                            placeholder="Type your message here"></textarea>
-                    </p>
-                </fieldset>
-                <button type="submit">Send</button>
-                <button type="reset">Reset</button>
-            </form>
-        </section>
-        <section>
+    <main class="main">
+        <article class="main__article">
             <h2>Our Location</h2>
             <address>
                 Bagtang Maroroy Daraga Albay<br>
@@ -73,11 +48,38 @@
                 <br><br>
                 Phone: <a href="tel:+5555555555">555-555-5555</a>
             </address>
-        </section>
+        </article>
+        <article class="main__article contact">
+            <h2 class="contact__h2">Our Contact Form</h2>
+            <form action="https://httpbin.org/get" method="get" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send Us A Message</legend>
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">Name:</label>
+                        <input class="contact__input" type="text" name="name" id="name" placeholder="your name" required>
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="email">Email:</label>
+                        <input class="contact__input" type="email" name="email" id="email" placeholder="your email" required>
+                    </p>
+                    <p>
+                        <label class="contact__label" for="message">Your Message:</label>
+                        <br>
+                        <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10"
+                            placeholder="Type your message here"></textarea>
+                    </p>
+                </fieldset>
+                <button class="contact__button" type="submit">Send</button>
+                <button class="contact__button" type="reset">Reset</button>
+            </form>
+        </article>
+        
     </main>
-    <hr>
-    <footer>
-        <p>Copyright &copy; The Tapsi Na Bradd</p>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy;</span>
+            <span class="nowrap">Tapsi na Bradd</span>
+        </p>
     </footer>
 </body>
 
