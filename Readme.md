@@ -127,10 +127,12 @@
         classes and elements
 
 2. Building the css default
-3. Building the mobile first
-4. Building for the large display
+3. Building the rest by reusable variable set in the pre CSS
+4. Building the animation
+5. Building the mobile first
+6. Building for the large display
 
-Please undo this with complete
+Here is an example.
 
 || RESET
 *
@@ -144,23 +146,26 @@ input, button, textarea
 		font heading
 		font style
 	COLORS
-		background color
 		background color fade
-		background image
-		body background color
-		font color
+        background color
+        background image
+        body background color
         border color
-        highlight color
-        link color
-        link hover
-        link active
+        button color
+        font color
         header background color
         header color
-        nav background color
         hero background color
         hero color
+        highlight color
+        link active
+        link color
+        link hover
+        nav background color
+
     BORDERS
         borders
+        border radius
 
     STANDARD PADDING
         padding
@@ -168,6 +173,23 @@ input, button, textarea
 
     STANDARD MARGIN
         margin
+
+|| MEDIA QUERY FOR DARK AND LIGHT THEME
+    From here, you need to overwite the root variable according to you
+    Example the following:
+        background color fade
+        background color
+        body background color
+        border color
+        button color
+        font color
+        header color
+        hero color
+        highlight color
+        link active
+        link color
+        link hover
+        nav background color
 
 || UTILITY
 .offscreen
@@ -203,10 +225,13 @@ h2, h3
     color
 p
     line-height
+
 a:any-link
     color
+
 a:hover, a:focus-visible
     color
+
 a:active
     color
 
@@ -250,3 +275,141 @@ a:active
     top
     left
     animation
+
+|| ANIMATION
+
+    0%
+    80%
+    100%
+
+|| FOOTER
+
+.footer
+    position
+    bottom
+    background-color
+    color
+    padding
+    text-align
+
+|| MAIN - using BEM notation a.k.a __ double underscore (Block, Element, Modifier)
+
+.main
+    padding
+
+.main__article
+    scroll-margin-top
+    margin
+
+.main__article:first-child
+    margin-top
+
+.main__article:last-child
+    min-height
+
+
+|| ABOUT
+
+.about__
+
+
+|| CONTACT
+
+.contact__h2
+    margin
+
+.contact__fieldset
+    border
+
+.contact__p
+    margin
+
+.contact__label
+    display
+    font-weight
+
+.contact__input, contact__textarea
+    padding
+    border-radius
+    border-width
+    width
+
+.contact__button
+    padding
+    border-radius
+    background-color
+    color
+    font-weight
+
+|| MENU
+
+thead, tbody, tfoot,tr
+        display
+
+
+.menu__container // This is an example using grid to design a table
+    display
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "hd1 hd2 hd3"
+        "cr cr1 cr1p"
+        "cr cr2 cr2p"
+        "cr cr3 cr3p"
+        "sf sf1 sf1p"
+        "sf sf2 sf2p"
+        "sf sf3 sf3p"
+        "cs cs cs";
+    gap: 0.1em;
+    margin-bottom: 1em;
+
+
+.menu__cr {
+    grid-area: cr;
+}
+
+.menu__sf {
+    grid-area: sf;
+}
+
+.menu__cs {
+    grid-area: cs;
+}
+
+.menu__cr,
+.menu__sf,
+.menu__cs,
+.menu__header {
+    color: var(--HIGHLIGHT-COLOR);
+    font-weight: bold;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.menu__header,
+.menu__item {
+    width: 100%;
+    padding: 1em;
+    border: medium ridge var(--BORDER-COLOR);
+}
+
+.menu__item {
+    display: grid;
+    place-content: center;
+}
+
+thead th:first-child {
+    border-top-left-radius: var(--BORDER-RADIUS);
+}
+
+thead th:last-child {
+    border-top-right-radius: var(--BORDER-RADIUS);
+}
+
+tfoot td {
+    border-bottom-left-radius: var(--BORDER-RADIUS);
+    border-bottom-right-radius: var(--BORDER-RADIUS);
+}
+
+
+|| MEDIA QUERY FOR DIFFERENT SCREEN SIZES
